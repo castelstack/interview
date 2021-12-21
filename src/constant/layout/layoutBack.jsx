@@ -1,5 +1,4 @@
 import React from "react";
-import AppBase from "./appBase";
 import Backtab from "./backtab";
 
 const LayoutBack = ({ children }) => {

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/common/button/btn";
-import Layout from "../../constant/layout/layout";
 import { LoginModal } from "../modal";
 
 const Index = () => {

@@ -1,6 +1,5 @@
 import React from "react";
 import { Input, PasswordInput } from "../../components/common/input";
-import Layout from "../../constant/layout/layout";
 import { Heading } from "../../constant/styles/text";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/common/button/btn";
