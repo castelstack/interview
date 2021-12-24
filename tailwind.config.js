@@ -197,7 +197,7 @@ module.exports = {
     opacity: ["responsive", "hover", "focus", "group-hover"],
     border: ["responsive", "hover", "focus", "group-hover"],
   },
-
+  enabled: process.env.NODE_ENV === "production",
   // eslint-disable-next-line global-require
   plugins: [],
 };
