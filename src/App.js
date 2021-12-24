@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 
-import "./App.css";
 import DarkButton from "./components/darkMode/DarkButton";
 import Home from "./pages/home";
 import Login from "./pages/login";
