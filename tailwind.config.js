@@ -1,5 +1,9 @@
 module.exports = {
-  purge: ['./public/index.html', './src/**/*.{js, jsx}'],
+  purge: {
+    content: ["./src/pages/**/*.{js,jsx,ts,tsx}", "./src/components/**/*.{js,jsx,ts,tsx}"]
+    // These options are passed through directly to PurgeCSS
+  }
+,
   darkMode: "class",
   theme: {
     extend: {
