@@ -1,7 +1,6 @@
 module.exports = {
   purge: {
-    content: ["./src/pages/**/*.{js,jsx,ts,tsx}", "./src/components/**/*.{js,jsx,ts,tsx}",
-    "./src/containers/**/*.{js,jsx,ts,tsx}",  "./src/constant/**/*.{js,jsx,ts,tsx}", "./src/**/**/*.{js,jsx,ts,tsx}"]
+    content: [ "./src/**/**/*.{js,jsx,ts,tsx}", "./*.{js,jsx,ts,tsx}, ./public/index.html',"]
     // These options are passed through directly to PurgeCSS
   }
 ,
