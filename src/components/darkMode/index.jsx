@@ -16,7 +16,7 @@ const DarkModeToggle = () => {
         {dark ? (
           <div className='flex items-center gap-2 '>
             <i
-              className='fa fa-sun-o text-yellow-600 text-5xl'
+              className='fa fa-sun-o text-yellow-600 text-base'
               aria-hidden='true'
             ></i>
             <SmText className='text-yellow-600 sm:block hidden'>Light</SmText>
@@ -24,7 +24,7 @@ const DarkModeToggle = () => {
         ) : (
           <div className='flex items-center gap-2 focus:'>
             {" "}
-            <i className='fa fa-moon-o text-gray-800 text-5xl' aria-hidden='true' />
+            <i className='fa fa-moon-o text-gray-800 text-base' aria-hidden='true' />
             <SmText className='text-gray-800 sm:block hidden'>Dark</SmText>
           </div>
         )}
