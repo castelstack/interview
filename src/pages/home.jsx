@@ -1,10 +1,10 @@
 import React from 'react';
-import Index from '../containers/homePartials';
+import Homepage from '../containers/homePartials';
 
 const Home = () => {
     return (
         <div>
-         <Index/>
+         <Homepage/>
         </div>
     );
 };

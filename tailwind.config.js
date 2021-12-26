@@ -1,9 +1,11 @@
 module.exports = {
   purge: {
-    content: [ "./src/**/**/*.{js,jsx,ts,tsx}", "./*.{js,jsx,ts,tsx}, ./public/index.html',"]
+    content: [
+      "./src/**/**/*.{js,jsx,ts,tsx}",
+      "./*.{js,jsx,ts,tsx}, ./public/index.html',",
+    ],
     // These options are passed through directly to PurgeCSS
-  }
-,
+  },
   darkMode: "class",
   theme: {
     extend: {
@@ -20,18 +22,20 @@ module.exports = {
           900: "#191919",
         },
         primary: {
-          500: "#fbd38d",
-          600: "#ff9944",
-          700: "#ff9933",
-          800: "#663399",
-          900: "#BA3F1D",
+          300: "#4fc3f7",
+          400: "#29b6f6",
+          500: "#03a9f4",
+          600: "#039be5",
+          700: "#0288d1",
+          800: "#0277bd",
+          900: "#01579b",
         },
         dark: {
-          600:"#818181",
-          700:"#212124",
-          800:"#161618",
-          900: "#02020B"
-        }
+          600: "#818181",
+          700: "#212124",
+          800: "#161618",
+          900: "#02020B",
+        },
       },
       gridTemplateColumns: {
         // Simple max-content
@@ -64,8 +68,7 @@ module.exports = {
           "rgba(50, 150, 250, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
         "new-3":
           " rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
-        "new-4":
-          "rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;",
+        "new-4": "rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;",
       },
       spacing: {
         "9/16": "56.25%",
@@ -79,6 +82,9 @@ module.exports = {
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        exo:['Exo 2', 'sans-serif'],
+        sans: ['Cabin', 'sans-serif'],
+        serif: ['Merriweather', 'serif'],
       },
       fontSize: {
         xs: "0.75rem",
@@ -190,7 +196,7 @@ module.exports = {
     },
   },
   variants: {
-    backgroundColor: ["dark","responsive", "hover", "focus", "group-hover"],
+    backgroundColor: ["dark", "responsive", "hover", "focus", "group-hover"],
     textColor: ["responsive", "hover", "focus", "group-hover", "dark"],
     translate: ["responsive", "hover", "focus", "group-hover"],
     boxShadow: ["responsive", "hover", "focus", "focus-within"],

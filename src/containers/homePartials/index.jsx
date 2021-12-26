@@ -1,21 +1,28 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { Button } from "../../components/common/button/btn";
-import { LoginModal } from "../modal";
+import DeApp from "../box/deApp";
+import Spec from "../box/spec";
+import Features from "../features/features";
+import Hero from './hero';
+import { HeroAdTwo,HeroMobile } from "../heroAd";
+import Version from "../version/version";
+import MobileFeatures from "../features/mobile";
+import Footer from "../footer/footer";
 
-const Index = () => {
+const Homepage = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className='h-screen flex place-content-center flex-col items-center justify-items-center'>
-      <h3 className='font-extrabold text-4xl text-gray-700'>Let's Talk</h3>
-      <div className='flex flex-col items-center'>
-        <Link to='/talk'>
-          <Button>Login</Button>{" "}
-        </Link>
-        <Link to='/signup' className='text-blue'><p className='text-gray-800 dark:text-gray-100 text-sm text-center'>SignUp</p></Link>
-      </div>
+    <div className='grid grid-cols-1'>
+      <Hero />
+      <Features />
+      <MobileFeatures/>
+      <HeroMobile/>
+      <Spec />
+      <DeApp  />
+      <HeroAdTwo/>
+      <Version />
+      <Footer/>
     </div>
   );
 };
 
-export default Index;
+export default Homepage;

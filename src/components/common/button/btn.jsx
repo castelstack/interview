@@ -1,12 +1,12 @@
 import React from 'react';
-import './buttonStyle.css';
+
 export const Button = ({ children, type, onClick, disabled, className }) => (
   <button
     disabled={disabled}
     type={type}
     onClick={onClick}
-    className={`${className} btn1 text-base m transition duration-300 ease-linear focus:outline-none`}  >
-    <span className="span1"> {children}</span>
+    className={`${className} uppercase bg-gradient-to-r from-primary-800 hover:from-primary-500 to-primary-500 text-base shadow-white text-white py-4 px-8 rounded-full font-bold  transition duration-500 ease-linear focus:outline-none`}  >
+   {children}
   </button>
 );
 

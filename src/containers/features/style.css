@@ -1,0 +1,9 @@
+.card {
+  position: relative;
+  box-shadow: 20px 20px rgba(0,0,0,.1);
+  transition: all .4s ease;
+}
+.card:hover {
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+  box-shadow: 10px 10px rgba(0,0,0,.1);
+}
