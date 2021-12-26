@@ -12,7 +12,7 @@ const Faq = ({ description, title }) => {
       <button
         onClick={handleClick}
         type='button'
-        className='py-8 sm:px-8 px-2 w-full flex justify-between items-center text-gray-800 font-bold text-xl focus:outline-none'
+        className='py-8 sm:px-8 px-2 w-full flex justify-between items-center text-gray-800 font-bold text-base focus:outline-none'
       >
         <h3 className=' sm:text-xl text-base text-gray-800 text-left flex flex-wrap font-bold'>
           {title}
