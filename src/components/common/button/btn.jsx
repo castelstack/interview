@@ -5,7 +5,7 @@ export const Button = ({ children, type, onClick, disabled, className }) => (
     disabled={disabled}
     type={type}
     onClick={onClick}
-    className={`${className} uppercase bg-gradient-to-r from-primary-800 hover:from-primary-500 to-primary-500 text-base shadow-white text-white py-4 px-8 rounded-full font-bold  transition duration-500 ease-linear focus:outline-none`}  >
+    className={`${className} uppercase bg-gradient-to-r from-primary-500 hover:from-primary-500 to-primary-500 text-base shadow-white text-white py-4 px-8 rounded-full font-bold  transition duration-500 ease-linear focus:outline-none`}  >
    {children}
   </button>
 );
