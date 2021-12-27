@@ -26,7 +26,7 @@ export const SubText = ({children, className}) => {
 
 export const SmText = ({children, className}) => {
     return (
-        <h5 className={`${className}  text-base font-bold`}>
+        <h5 className={`${className}  text-xl font-bold`}>
             {children}
         </h5>
     );

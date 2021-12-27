@@ -7,6 +7,7 @@ import { HeroAdTwo,HeroMobile } from "../heroAd";
 import Version from "../version/version";
 import MobileFeatures from "../features/mobile";
 import Footer from "../footer/footer";
+import DarkModeHero from "../box/darkModeHero";
 
 const Homepage = () => {
   const [open, setOpen] = useState(false);
@@ -15,7 +16,8 @@ const Homepage = () => {
       <Hero />
       <Features />
       <MobileFeatures/>
-      <HeroMobile/>
+      <HeroMobile />
+      <DarkModeHero/>
       <Spec />
       <DeApp  />
       <HeroAdTwo/>

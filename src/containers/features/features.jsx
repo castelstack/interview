@@ -12,7 +12,7 @@ const Features = () => {
       {/* <h1 className='text-3xl font-extrabold text-primary-800 pb-12 uppercase ml-5'>
         What do we have?
       </h1> */}
-      <div className='grid grid-cols-1 gap-12'>
+      <div className='grid grid-cols-1 '>
         <FeatureCardRight />
         <FeatureCardLeft />
         <FeatureCardRight1 />

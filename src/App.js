@@ -10,14 +10,10 @@ function App() {
   return (
     <Router>
       <AnimatePresence>
-        <div
-          className='transition duration-500  
-                     bg-white dark:bg-dark-900 '
-        >
+      
           <Routes>
             <Route path='/' exact element={<Home />} />
           </Routes>
-        </div>
       </AnimatePresence>
     </Router>
   );

@@ -6,8 +6,8 @@ import './style.css';
 
 const Tab = ({title, icon, description}) => {
   return (
-      <div className=' gradient-border  flex flex-col p-2 rounded-md h-40 justify-items-center items-center w-full'>
-          <img src={img} alt='icon for dApps' className='h-12 w-12 animate-float' />
+      <div className=' h-40 w-40  flex flex-col py-3 px-6 rounded-md  justify-items-center items-center  shadow-white'>
+          <img src={img} alt='icon for dApps' className='h-20 w-20 animate-float' />
           <h5 className='text-center text-sm sm:text-base'>{title}</h5>
           {/* <SmText className='text-center text-sm sm:text-base '>{description}</SmText> */}
     </div>
@@ -16,14 +16,7 @@ const Tab = ({title, icon, description}) => {
 
 const DeApp = () => {
   return (
-    <div className={`${paddingX} grid sm:grid-cols-2 py-8 items-center sm:divide-x divide-none bg-gray-100`} >
-      <div className='grid grid-cols-2 sm:row-start-1 row-start-2 sm:gap-8 gap-2 sm:p-12 p-2 justify-items-center'>
-              {
-                  data.map(el =>
-                      <Tab key={el.title} title={el.title} icon={el.icon}/>
-                    )
-          }
-      </div>
+    <div className={`${paddingX} gradient-border m-4 grid grid-cols-1 py-8 items-center justify-items-center divide-y  bg-gray-100`} >
       <div className='flex flex-col md:p-12 p-2 pb-4'>
         <Heading className='pb-8 sm:text-left text-center'>Decentralized Applications</Heading>
         <SmText className=' sm:text-left text-center'>
@@ -33,6 +26,13 @@ const DeApp = () => {
           browser offers templates for the construction of decentralized apps
           that can be accessed by all the ecosystem’s use
         </SmText>
+      </div>
+      <div className='flex gap-4 sm:p-12 p-2 justify-items-center'>
+              {
+                  data.map(el =>
+                      <Tab key={el.title} title={el.title} icon={el.icon}/>
+                    )
+          }
       </div>
     </div>
   );

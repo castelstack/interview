@@ -3,13 +3,21 @@ import { Heading, SubText } from "../../constant/styles/text";
 import { paddingX } from "../../constant/styles/spacing";
 import { Button } from "../../components/common/button/btn";
 import img from "../../assets/svg/hero.svg";
-import logo from "../../assets/svg/logo.svg";
+import logo from "../../assets/svg/logo.svg"; 
+import bg from "../../assets/svg/bg.svg";
 
 const Hero = () => {
   return (
-    <div className='relative h-full sm:mb-32 bg-gray-100'>
+    <div className='relative h-full sm:mb-32 bg-gray-100 overflow-hidden '>
       <div
         className={`${paddingX}  flex flex-col items-center sm:py-20 py-12 gap-12 bg-gray-100 sm:bg-gradient-to-r from-primary-900  to-primary-500`}
+        style={{
+          background: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(${bg})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundAttachment: "fixed",
+        }}
       >
         <div className='flex flex-col sm:flex-row mb-8 w-full sm:items-start items-center gap-8 justify-between'>
           <div className='flex'>
@@ -48,7 +56,7 @@ const Hero = () => {
           <img
             src={img}
             alt='zor browser hero image '
-            className=' w-full absolute -bottom-20  -right-80 sm:block hidden'
+            className=' w-full absolute -bottom-20  -right-80 sm:block hidden pb-4'
           />
         </div>
       </div>
