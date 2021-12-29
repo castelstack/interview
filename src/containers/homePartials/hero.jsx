@@ -3,7 +3,6 @@ import { Heading, SubText } from "../../constant/styles/text";
 import { paddingX } from "../../constant/styles/spacing";
 import { Button } from "../../components/common/button/btn";
 import img from "../../assets/svg/hero.svg";
-import logo from "../../assets/svg/logo.svg";
 import bg from "../../assets/svg/bg.svg";
 
 const Hero = () => {

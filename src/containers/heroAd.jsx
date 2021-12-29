@@ -3,7 +3,9 @@ import { Button } from "../components/common/button/btn";
 import { paddingX } from "../constant/styles/spacing";
 import { Heading, SubText } from "../constant/styles/text";
 import img from "../assets/svg/free.svg";
-import bg from "../assets/svg/cube.svg";
+
+import apple from "../assets/svg/apple.svg";
+import play from "../assets/svg/play-store.svg";
 import phone from "../assets/svg/phone2.svg";
 
 import {
@@ -80,16 +82,24 @@ export const HeroMobile = () => {
           <ScrollBottom>
             <div className='grid sm:grid-cols-2 grid-cols-1 gap-4 justify-between w-full'>
               <button
-                className={` py-4 px-6 rounded-full shadow-white bg-gray-200
+                className={` py-4 px-6 rounded-full shadow-white bg-gray-200 flex items-center
                  text-gray-800 font-bold text-base transition duration-300 ease-linear focus:outline-none`}
               >
-                Play Store
+                  <img
+          src={play}
+          alt='download zor'
+          className='h-8 w-8'
+        />Play Store
               </button>
               <button
-                className={` py-4 px-6 rounded-full shadow-white bg-gray-200
+                className={` py-4 px-6 rounded-full shadow-white bg-gray-200 flex items-center
                  text-gray-800 font-bold text-base transition duration-300 ease-linear focus:outline-none`}
               >
-                App Store
+                  <img
+          src={apple}
+          alt='download zor'
+          className='h-6 w-6 mr-2'
+        />App Store
               </button>
             </div>
           </ScrollBottom>

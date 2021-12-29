@@ -63,7 +63,7 @@ const DeApp = () => {
         backgroundSize: "cover ",
       }}
       className={`${paddingX} grid grid-cols-1 py-20 `}
-    ><SubText className='text-center text-white'>Some charaterics if Zor</SubText>
+    ><SubText className='text-center text-white'>Some charateristics if Zor</SubText>
       <div className='grid grid-cols-1 gap-8'>
         <Tab />
         <TabRev/>

@@ -9,14 +9,14 @@ import bg from "../../assets/svg/bg.svg";
 const Homepage = () => {
   return (
     <div
-      className='grid grid-cols-1 bg-gradient-to-r from-primary-900 via-primary-700 to-primary-900'
+      className='grid grid-cols-1 bg-gradient-to-r from-primary-900 via-primary-300 to-primary-900'
      
     >
       {/* <div className='bg-primary-500'> */}
       <Hero />
       {/* </div> */}
       <div
-        className='bg-gradient-to-r from-primary-900 via-primary-700 to-primary-900 -mb-20'
+        className='bg-gradient-to-r from-primary-900 via-primary-300 to-primary-900 -mb-20'
         style={{
         
           transform: "translateY(-4.2rem)",
@@ -38,7 +38,7 @@ const Homepage = () => {
         <HeroAdTwo />
       </div>
       <div
-        className='bg-gradient-to-r from-primary-900 via-primary-700 to-primary-900 pt-2 -mb-20'
+        className='bg-gradient-to-r from-primary-900 via-primary-300 to-primary-900 pt-2 -mb-20'
         style={{
           transform: "translateY(-4rem)",
         
