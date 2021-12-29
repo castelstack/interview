@@ -22,10 +22,11 @@ module.exports = {
           900: "#191919",
         },
         primary: {
+          200: "#A5A5A5",
           300: "#4fc3f7",
-          400: "#29b6f6",
-          500: "#03a9f4",
-          600: "#039be5",
+          400: "#1162FF",
+          500: "#35DBC7",
+          600: "#879A9C",
           700: "#0288d1",
           800: "#0277bd",
           900: "#01579b",
@@ -81,9 +82,9 @@ module.exports = {
         72: "500px",
       },
       fontFamily: {
+        prime: ["Courier Prime", "monospace"],
         inter: ["Inter", "sans-serif"],
         exo:['Exo 2', 'sans-serif'],
-        sans: ['Cabin', 'sans-serif'],
         serif: ['Merriweather', 'serif'],
       },
       fontSize: {

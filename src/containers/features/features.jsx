@@ -4,6 +4,7 @@ import {
 } from "./cards";
 import bg from "../../assets/svg/feaa.svg";
 import { paddingX } from "../../constant/styles/spacing";
+import { FeaturesData } from "../../mock/featureMock";
 
 const Features = () => {
   return (
@@ -14,17 +15,15 @@ const Features = () => {
       backgroundPosition: "center",
       backgroundSize: "cover",
     }}>
-      <h1 className='text-3xl text-center font-extrabold text-white mb-40 '>
+      <h1 className='sm:text-3xl text-2xl text-center font-extrabold text-white mb-40 '>
         Built-in functions
       </h1>
       <div className='grid lg:grid-cols-2 md:grid-cols-1 lg:gap-x-20 gap-y-40'>
-        <FeatureCardRight />
-        <FeatureCardRight />
-         <FeatureCardRight />
-          <FeatureCardRight />
-
-         <FeatureCardRight />
-          <FeatureCardRight />
+        {
+          FeaturesData.map(el =>
+            <FeatureCardRight key={el.title} title={el.title} desc={el.desc} img={el.image}/>
+            )
+      }
       </div>
     </div>
   );

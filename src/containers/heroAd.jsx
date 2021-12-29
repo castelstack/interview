@@ -37,18 +37,18 @@ export const HeroAdOne = () => {
 export const HeroAdTwo = () => {
   return (
     <div  
-      className={`${paddingX} py-8  justify-between flex flex-col items-center bg-gray-500`}
+      className={`${paddingX} py-8  justify-between flex flex-col items-center bg-primary-600`}
     >
-      <div className='flex  flex-col md:flex-row items-center gap-12'>
+      <div className='flex  flex-col md:flex-row items-center gap-8'>
         <img src={img} alt='mobile zor browser' className='sm:w-full w-full ' />
-        <div className='w-full flex flex-col sm:items-start items-center gap-12 sm:px-8 px-2'>
+        <div className='w-full flex flex-col sm:items-start items-center gap-2   sm:px-4 px-2'>
           <ScrollBottom>
-            <Heading className='font-extrabold text-white sm:text-left text-center'>
+            <Heading className='font-bold text-white sm:text-left text-center'>
               Stay Updated with our browser
             </Heading>
           </ScrollBottom>
           <ScrollBottom>
-            <SubText className='font-bold sm:text-left text-white text-center text-sm sm:text-base '>
+            <SubText className=' sm:text-left text-white text-center text-sm sm:text-base '>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
               nemo, accusamus in placeat eos, Lorem, ipsum dolor sit amet
               consectetur adipisicing elit. Vitae nemo, accusamus
@@ -63,17 +63,17 @@ export const HeroAdTwo = () => {
 export const HeroMobile = () => {
   return (
     <div
-      className={`${paddingX} py-8  justify-between  flex flex-col items-center bg-gray-500`}
+      className={`${paddingX} py-8  justify-between  flex flex-col items-center bg-primary-600`}
     >
       <div className='flex  flex-col md:flex-row items-center gap-12'>
         <div className='w-full flex flex-col sm:items-start items-center gap-12 sm:px-12 px-2'>
           <ScrollBottom>
-            <Heading className='font-extrabold text-white sm:text-left text-center'>
+            <Heading className='font-bold text-white sm:text-left text-center'>
               Mobile Responsive
             </Heading>
           </ScrollBottom>
           <ScrollBottom>
-            <SubText className='font-bold sm:text-left text-white text-center text-sm sm:text-base '>
+            <SubText className=' sm:text-left text-white text-center text-sm sm:text-base '>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
               nemo, accusamus in placeat eos, Lorem, ipsum dolor sit amet
               consectetur adipisicing elit. Vitae nemo, accusamus
@@ -82,17 +82,17 @@ export const HeroMobile = () => {
           <ScrollBottom>
             <div className='grid sm:grid-cols-2 grid-cols-1 gap-4 justify-between w-full'>
               <button
-                className={` py-4 px-6 rounded-full shadow-white bg-gray-200 flex items-center
+                className={` py-4 px-6 rounded-full shadow-white ring-2 ring-primary-500 bg-gradient-to-r from-white  to-primary-200  flex items-center
                  text-gray-800 font-bold text-base transition duration-300 ease-linear focus:outline-none`}
               >
                   <img
           src={play}
-          alt='download zor'
+          alt='download zor'  
           className='h-8 w-8'
         />Play Store
               </button>
               <button
-                className={` py-4 px-6 rounded-full shadow-white bg-gray-200 flex items-center
+                className={` py-4 px-6 rounded-full shadow-white ring-1 ring-primary-500 bg-gradient-to-r from-white  to-primary-200  flex items-center
                  text-gray-800 font-bold text-base transition duration-300 ease-linear focus:outline-none`}
               >
                   <img
@@ -105,7 +105,7 @@ export const HeroMobile = () => {
           </ScrollBottom>
         </div>
         <img
-          src={phone}
+          src={phone} 
           alt='mobile zor browser'
           className='w-full  animate-spring'
         />
