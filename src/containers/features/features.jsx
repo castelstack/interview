@@ -1,22 +1,30 @@
 import React from "react";
 import {
-  FeatureCardRight,
-  FeatureCardLeft,
-  FeatureCardRight1,
-  FeatureCardLeft1,
+  FeatureCardRight
 } from "./cards";
+import bg from "../../assets/svg/feaa.svg";
+import { paddingX } from "../../constant/styles/spacing";
 
 const Features = () => {
   return (
-    <div className='sm:grid hidden grid-cols-1 py-20 bg-gray-100'>
-      {/* <h1 className='text-3xl font-extrabold text-primary-800 pb-12 uppercase ml-5'>
-        What do we have?
-      </h1> */}
-      <div className='grid grid-cols-1 '>
+    <div className={`${paddingX} grid grid-cols-1  py-40 `}
+    style={{
+      background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${bg})`,
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+    }}>
+      <h1 className='text-3xl text-center font-extrabold text-white mb-40 '>
+        Built-in functions
+      </h1>
+      <div className='grid lg:grid-cols-2 md:grid-cols-1 lg:gap-x-20 gap-y-40'>
         <FeatureCardRight />
-        <FeatureCardLeft />
-        <FeatureCardRight1 />
-        <FeatureCardLeft1 />
+        <FeatureCardRight />
+         <FeatureCardRight />
+          <FeatureCardRight />
+
+         <FeatureCardRight />
+          <FeatureCardRight />
       </div>
     </div>
   );

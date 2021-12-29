@@ -1,38 +1,73 @@
 import React from "react";
-import { Heading, SmText } from "../../constant/styles/text";
-import img from "../../assets/svg/wal.svg";
+import { Heading, SmText, SubText } from "../../constant/styles/text";
+import img from "../../assets/svg/cha1.svg";
+import bg from "../../assets/svg/fea.svg";
+import img1 from "../../assets/svg/2.svg";
+import img4 from "../../assets/svg/Union.svg";
+import img2 from "../../assets/svg/22.svg";
+import img3 from "../../assets/svg/cone.svg";
 import { paddingX } from "../../constant/styles/spacing";
-import './style.css';
 
-const Tab = ({title, icon, description}) => {
+const Tab = ({ title, icon, description }) => {
   return (
-      <div className=' h-40 w-40  flex flex-col py-3 px-6 rounded-md  justify-items-center items-center  shadow-white'>
-          <img src={img} alt='icon for dApps' className='h-20 w-20 animate-float' />
-          <h5 className='text-center text-sm sm:text-base'>{title}</h5>
-          {/* <SmText className='text-center text-sm sm:text-base '>{description}</SmText> */}
+    <div className='grid md:grid-cols-2 grid-cols-1 gap-12 '>
+      <div className='relative mt-8 md:row-span-full'>
+        <div className='flex gap-4 absolute lg:bottom-32 md:bottom-48 -bottom-20 sm:left-8 left-3 items-center  z-10'>
+          <div className='flex flex-col -space-y-12 > * items-center z-10'>
+            <img src={img1} alt='' className='md:h-20 md:w-32 h-20 w-20' />
+            <img src={img3} alt='' className='md:h-20 md:w-32 h-20 w-20' />
+          </div>
+        </div>
+        <img src={img2} alt='' className='' />{" "}
+        <p className='absolute text-white lg:text-xl  md:text-sm sm:text-xl text-base px-8 lg:top-8 md:top-2 top-4 left-2'>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, ducimus?
+          Accusamus rerum, mollitia ex nihil quas exercitationem quos et beatae
+          veniam nobis quasi itaque voluptatem laborum commodi, voluptatum
+          assumenda eaque?
+        </p>
+      </div>
+      <img src={img} alt='side img' className=' row-span-full' />{" "}
+    </div>
+  );
+};
+const TabRev = ({ title, icon, description }) => {
+  return (
+    <div className='grid md:grid-cols-2 grid-cols-1 gap-12'>
+      <img src={img} alt='side img' className='' />{" "}
+      <div className='relative mt-8'>
+        <div className='flex gap-4 absolute lg:bottom-32 md:bottom-48 -bottom-20 right-3 items-center  z-10'>
+          <div className='flex flex-col -space-y-12 > * items-center z-10'>
+            <img src={img1} alt='' className='md:h-20 md:w-32 h-20 w-20' />
+            <img src={img3} alt='' className='md:h-20 md:w-32 h-20 w-20' />
+          </div>
+        </div>
+        <img src={img4} alt='' className=' ' />{" "}
+        <p className='absolute text-white lg:text-xl  md:text-sm sm:text-xl text-base px-8 lg:top-8 md:top-2 top-4 left-2'>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, ducimus?
+          Accusamus rerum, mollitia ex nihil quas exercitationem quos et beatae
+          veniam nobis quasi itaque voluptatem laborum commodi, voluptatum
+          assumenda eaque?
+        </p>
+      </div>
     </div>
   );
 };
 
 const DeApp = () => {
   return (
-    <div className={`${paddingX} gradient-border m-4 grid grid-cols-1 py-8 items-center justify-items-center divide-y  bg-gray-100`} >
-      <div className='flex flex-col md:p-12 p-2 pb-4'>
-        <Heading className='pb-8 sm:text-left text-center'>Decentralized Applications</Heading>
-        <SmText className=' sm:text-left text-center'>
-          The modern world’s dramatic increase in internet use sparked the
-          demand to make more and more digital tools part and parcel of the web
-          browsing experience. In addition to its built-in programs, ZOR’s
-          browser offers templates for the construction of decentralized apps
-          that can be accessed by all the ecosystem’s use
-        </SmText>
-      </div>
-      <div className='flex gap-4 sm:p-12 p-2 justify-items-center'>
-              {
-                  data.map(el =>
-                      <Tab key={el.title} title={el.title} icon={el.icon}/>
-                    )
-          }
+    <div
+      style={{
+        background: `url(${bg})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover ",
+      }}
+      className={`${paddingX} grid grid-cols-1 py-20 `}
+    ><SubText className='text-center text-white'>Some charaterics if Zor</SubText>
+      <div className='grid grid-cols-1 gap-8'>
+        <Tab />
+        <TabRev/>
+        <Tab />
       </div>
     </div>
   );
@@ -43,21 +78,21 @@ const data = [
     title: "Dapps",
     description: "",
     icon: "",
-    },
-    {
-        title: "Crypto wallet",
-        description: "",
-        icon: "",
-    },
-    {
-        title: "Blockchain ecosystem",
-        description: "",
-        icon: "",
-    },
-    {
-        title: "DeFi",
-        description: "",
-        icon: "",
-      },
+  },
+  {
+    title: "Crypto wallet",
+    description: "",
+    icon: "",
+  },
+  {
+    title: "Blockchain ecosystem",
+    description: "",
+    icon: "",
+  },
+  {
+    title: "DeFi",
+    description: "",
+    icon: "",
+  },
 ];
 export default DeApp;

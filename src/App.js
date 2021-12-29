@@ -2,6 +2,7 @@ import { AnimatePresence } from "framer-motion";
 import React from "react";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 
+import bg from "./assets/svg/bg.svg";
 import "./App.css";
 import DarkButton from "./components/darkMode/DarkButton";
 import Home from "./pages/home";
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path='/' exact element={<Home />} />
           </Routes>
+         
       </AnimatePresence>
     </Router>
   );

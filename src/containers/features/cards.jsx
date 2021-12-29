@@ -1,7 +1,12 @@
 import React from "react";
 import { Heading } from "../../constant/styles/text";
-import img from "../../assets/svg/computer.svg";
-import logo from "../../assets/svg/logo.svg";
+import bg from "../../assets/svg/feature.svg";
+
+import img1 from "../../assets/svg/1.svg";
+
+import img2 from "../../assets/svg/2.svg";
+import img3 from "../../assets/svg/3.svg";
+import img4 from "../../assets/svg/firewall.svg";
 import "./style.css";
 import {
   ScrollInRight,
@@ -10,131 +15,29 @@ import {
 
 export const FeatureCardRight = () => {
   return (
-    <div className='flex sm:flex-row flex-col w-full justify-between items-center'>
-      <img
-        src={img}
-        alt='zor features'
-        className='sm:h-96 h-40 w-2/4 px-12 text-white'
-      />
-      <ScrollInRight>
-      <div
-          className='card-right w-3/4  h-screen rounded-l-md p-20 bg-primary-900 float-right justify-self-end'
-       
-        >
-          <img
-            src={logo}
-            alt='logo'
-            className='absolute bottom-0 left-0 h-40 w-40 z-20 animate-bounce p-4 hover:animate-none'
-          />
-          <Heading className='text-left text-white mb-6 mt-32'>Secured</Heading>
-          <p className='text-left text-white text-sm sm:text-xl '>
-            Personal privacy of community members is ZOR’s number one priority.
-            Built into the ZOR browser is our customs-built VPN tool, allowing
-            for full anonymity throughout browning time
-          </p>
-        </div>
-      </ScrollInRight>
-    </div>
-  );
-};
+    <div
+      // style={{
+      //   background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${bg})`,
+      //   backgroundRepeat: "no-repeat",
+      //   backgroundPosition: "center",
+      //   backgroundSize: "cover",
+      //   backgroundAttachment: "fixed",
+      // }}
+      className='relative mt-8'
+    >
+      <img src={img4} alt='' className='md:h-20 md:w-20 h-12 w-12 absolute md:-top-32 md:left-28 -top-28 left-20 z-20' />
+      <div className='flex gap-4 absolute lg:-top-44 md:-top-48 -top-40 left-12 items-center  z-10'>
+        <div className='flex flex-col -space-y-16 > * items-center z-10'>
 
-export const FeatureCardLeft = () => {
-  return (
-    <div className=' flex sm:flex-row h-screen  flex-col items-center'>
-      <ScrollInLeft>
-      <div
-          className='relative card z-10 w-4/5  h-screen rounded-r-md p-20 bg-primary-900'
-          // style={{
-          //   clipPath:
-          //     "polygon(20% 0, 100% 0, 100% 20%, 100% 76%, 100% 100%, 20% 100%, 0% 80%, 0% 20%)",
-          // }}
-        >
-          <img
-            src={logo}
-            alt='logo'
-            className='absolute bottom-0 right-0 h-40 w-40 z-20 animate-bounce p-4'
-          />
-          <Heading className='text-right text-white mb-6 mt-32'>
-            Fast and ad-Free
-          </Heading>
-          <p className='text-right text-white text-sm sm:text-xl '>
-            The currency that powers it all. ZOR Token constitutes the
-            ecosystem’s unique cryptocurrency. After receiving pay-outs for
-            their use of the ZOR Browser, users can redeem Tokens for e-commerce
-            offers available only to the ZOR community.
-          </p>
+      <img src={img3} alt='' className='md:h-48 md:w-48 h-40 w-40' />
+      <img src={img2} alt='' className='md:h-20 md:w-20 h-20 w-20' />
+      <img src={img1} alt='' className='md:h-20 md:w-32 h-20 w-20' />
         </div>
-      </ScrollInLeft>
-      <img
-        src={img}
-        alt='zor features'
-        className='h-96 w-2/4 px-12 text-white'
-      />
-    </div>
-  );
-};
-
-export const FeatureCardRight1 = () => {
-  return (
-    <div className='flex sm:flex-row flex-col items-center'>
-      <img
-        src={img}
-        alt='zor features'
-        className='h-96 w-2/4  px-12 text-white'
-      />
-      <ScrollInRight>
-        <div
-          className='card-right w-3/4  h-screen rounded-l-md p-20 bg-primary-900 float-right justify-self-end'
-        
-        >
-          <img
-            src={logo}
-            alt='logo'
-            className='absolute bottom-0 left-0 h-40 w-40 z-20 animate-bounce p-4 hover:animate-none'
-          />
-          <Heading className='text-left text-white mb-6 mt-32'>
-            Multilayered VPN
-          </Heading>
-          <p className='text-left text-white text-sm sm:text-xl '>
-            Personal privacy of community members is ZOR’s number one priority.
-            Built into the ZOR browser is our customs-built VPN tool, allowing
-            for full anonymity throughout browning time
-          </p>
-        </div>
-      </ScrollInRight>
-    </div>
-  );
-};
-
-export const FeatureCardLeft1 = () => {
-  return (
-    <div className='flex sm:flex-row flex-col items-center'>
-      <ScrollInLeft>
-        <div
-          className='relative card z-10 w-4/5  h-screen rounded-r-md p-20 bg-primary-900'
-         
-        >
-          <img
-            src={logo}
-            alt='logo'
-            className='absolute bottom-0 right-0 h-40 w-40 z-20 animate-bounce p-4'
-          />
-          <Heading className='text-right text-white mb-6 mt-32'>
-            ZOR Token
-          </Heading>
-          <p className='text-right text-white text-sm sm:text-xl '>
-            The currency that powers it all. ZOR Token constitutes the
-            ecosystem’s unique cryptocurrency. After receiving pay-outs for
-            their use of the ZOR Browser, users can redeem Tokens for e-commerce
-            offers available only to the ZOR community.
-          </p>
-        </div>
-      </ScrollInLeft>
-      <img
-        src={img}
-        alt='zor features'
-        className='h-96 w-2/4 px-12 text-white'
-      />
+        <p className='text-2xl text-white'>Decentralized Application</p>
+      </div>
+     
+      <img src={bg} alt=''  className=''/>{" "}
+      <p className='absolute text-white lg:text-xl  md:text-sm sm:text-xl text-xs sm:px-8 px-2 lg:top-8 md:top-2 top-4 left-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, ducimus? Accusamus rerum, mollitia ex nihil quas exercitationem quos et beatae veniam nobis quasi itaque voluptatem laborum commodi, voluptatum assumenda eaque?</p>
     </div>
   );
 };
