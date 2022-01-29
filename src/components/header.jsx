@@ -2,13 +2,16 @@ import logo from "../assets/logo.png";
 function Header() {
   return (
     <div className='flex gap-4 justify-between items-center py-6 px-4 border-b-2 border-gray-40'>
-      <div className='flex gap-4 items-center'>
-      <div className='w-12 h-12  border-gray-400'>
+          <div className='flex gap-4 items-center'>
+          <button className='text-2xl text-black px-4'>
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+      <div className='w-12 h-12  border-gray-400 md:block hidden'>
         <img src={logo} alt='logo' className='w-12 h-12' />
       </div>
-        <h4 className='text-black font-normal text-sm'>New Release</h4>
-        <h4 className='text-black font-normal text-sm'>Customize</h4>
-        <h4 className='text-black font-normal text-sm'>Sale</h4>
+        <h4 className='text-black font-normal text-sm md:block hidden'>New Release</h4>
+        <h4 className='text-black font-normal text-sm md:block hidden'>Customize</h4>
+        <h4 className='text-black font-normal text-sm md:block hidden'>Sale</h4>
       </div>
           <div className='flex gap-4 items-center'>
               <div className='flex gap-6 items-center'>
