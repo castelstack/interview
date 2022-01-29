@@ -3,7 +3,7 @@ import Homepage from '../containers/homePartials';
 
 const Home = () => {
     return (
-        <div>
+        <div >
          <Homepage/>
         </div>
     );
